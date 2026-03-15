@@ -1,0 +1,228 @@
+/* ==========================================
+   Modern Aesthetic Library UI - Upgrade
+   ========================================== */
+
+/* Google Font Feel */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0eb1e8 0%, #e4ecf7 100%);
+    min-height: 100vh;
+    margin: 0;
+    color: #2d3436;
+    letter-spacing: 0.3px;
+}
+
+/* Smooth page transition */
+* {
+    transition: all 0.3s ease;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    max-width: 1200px;
+    background: rgba(233, 235, 236, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+    padding: 40px;
+    margin: 30px auto;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.container-fluid {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* ================= HEADER ================= */
+
+h4 {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #4e73df, #6c5ce7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 20px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Gradient Buttons */
+.btn-primary {
+    background: linear-gradient(45deg, #4e73df, #6c5ce7);
+    color: white;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #00b894, #55efc4);
+    color: white;
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #ff7675, #d63031);
+    color: white;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #feca57, #ff9f43);
+    color: white;
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #636e72, #2f3542);
+    color: white;
+}
+
+/* ================= CARD ================= */
+
+.card {
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+/* ================= TABLE ================= */
+
+.table {
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+}
+
+.table thead th {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    color: white;
+    font-weight: 600;
+    padding: 18px;
+    font-size: 14px;
+}
+
+.table tbody tr:hover {
+    background: rgba(78, 115, 223, 0.08);
+}
+
+.table td {
+    padding: 14px;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+/* ================= FORM ================= */
+
+.form-control {
+    border-radius: 50px;
+    border: 2px solid #eaeaea;
+    padding: 12px 20px;
+    background: #f9fbfd;
+}
+
+.form-control:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.1);
+    background: white;
+}
+
+/* ================= SEARCH BOX ================= */
+
+.mb-4 {
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* ================= TOTAL DENDA BOX ================= */
+
+.total-denda-box {
+    background: linear-gradient(135deg, #6c5ce7, #4e73df);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(108, 92, 231, 0.3);
+}
+
+.total-denda-amount {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* ================= METODE PEMBAYARAN ================= */
+
+.metode-pembayaran {
+    background: #f0f6ff;
+    border-left: 5px solid #4e73df;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #4e73df, #6c5ce7);
+    border-radius: 10px;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .table, .btn, .container {
+    animation: fadeInUp 0.6s ease;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        margin: 15px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+}
